@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Rental Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #333;
+        }
+
+        /* Top bar */
+        .top-bar {
+            background: #111;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Big Home Button */
+        .home-btn {
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+            color: #fff;
+            text-decoration: none;
+            padding: 18px 45px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 40px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+
+        .home-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+            background: linear-gradient(135deg, #dd2476, #ff512f);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .service-card h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #111;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Big Attractive Home Button -->
+    <div class="top-bar">
+        <a href="index.php" class="home-btn">🏠 GO TO HOME</a>
+    </div>
+
+    <div class="container">
+        <h1>Our Services</h1>
+        <p class="subtitle">Reliable and affordable car rental solutions for every journey</p>
+
+        <div class="services">
+
+            <div class="service-card">
+                <h3>🚘 Self-Drive Car Rental</h3>
+                <p>Rent cars on an hourly, daily, or weekly basis with complete freedom.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>👨‍✈️ Chauffeur-Driven Cars</h3>
+                <p>Professional drivers for safe and comfortable journeys.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>🛫 Airport Pickup & Drop</h3>
+                <p>On-time airport transfers with fixed pricing.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>🏙️ City Travel</h3>
+                <p>Affordable car rentals for daily city travel.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>🌄 Outstation Trips</h3>
+                <p>Reliable vehicles for long-distance journeys.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>🚙 Wide Range of Cars</h3>
+                <p>Hatchback, Sedan, SUV, and Luxury cars available.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>📅 Online Booking</h3>
+                <p>Easy booking with instant confirmation.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>💳 Secure Payments</h3>
+                <p>Safe and secure online payment options.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>📞 24/7 Customer Support</h3>
+                <p>Customer support available anytime.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Car Rental Portal | All Rights Reserved
+    </footer>
+
+</body>
+</html>

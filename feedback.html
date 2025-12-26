@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Feedback</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script>
+function submitFeedback(){
+    document.getElementById("formDiv").style.display = "none";
+    document.getElementById("successDiv").style.display = "block";
+}
+</script>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="row" style="margin-top:50px">
+    <div class="col-md-6 col-md-offset-3">
+
+      <!-- FORM DIV -->
+      <div id="formDiv">
+        <h2>Feedback</h2>
+        <p>Please provide your valuable feedback below:</p>
+
+        <div class="form-group">
+          <label>How do you rate your overall experience?</label><br>
+          <label class="radio-inline">
+            <input type="radio" name="experience"> Bad
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="experience"> Average
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="experience"> Good
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label>Comments:</label>
+          <textarea class="form-control" rows="5"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Your Name:</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" class="form-control">
+        </div>
+
+        <!-- 🔴 BUTTON (NOT SUBMIT) -->
+        <button class="btn btn-warning btn-block" onclick="submitFeedback()">
+          SUBMIT
+        </button>
+      </div>
+
+      <!-- SUCCESS MESSAGE -->
+      <div id="successDiv" style="display:none;">
+        <h3 class="text-success text-center">
+          ✅ Feedback Submitted Successfully!
+        </h3>
+        <center>
+          <button class="btn btn-primary" onclick="location.reload()">
+            Submit Another Feedback
+          </button>
+        </center>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

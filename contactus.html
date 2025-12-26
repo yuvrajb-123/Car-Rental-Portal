@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/cont.css">
+
+    <style>
+        .home-btn{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: orange;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .home-btn:hover{
+            background: darkorange;
+        }
+        .wts-btn{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: orange;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .wts-btn:hover{
+            background: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="contact">
+
+    <div class="content">
+        <h1><b>CONTACT US</b></h1>
+        <p>Feel free to reach out to us anytime</p>
+    </div>
+
+    <div class="container">
+
+        <!-- LEFT SIDE INFO -->
+        <div class="contactInfo">
+
+            <div class="box">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>411041 Shree Control Chowk,<br>Narhe ,Pune</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>7420801442</p>
+                    <p>8767626140</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon"><i class="fas fa-envelope"></i></div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>sameerpatil123@gmail.com <br/>
+                        yuvrajbhosale912@gmail.com
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE FORM -->
+        <div class="contactForm">
+
+           <!----> <!-- 🔴 SMS FORM -->
+            <form action="send_wts.php" method="POST">
+                <h2>Send Message</h2>
+
+                <div class="inputBox">
+                    <input type="text" name="name" required>
+                    <span>Full Name</span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="phone" value="7420801442" required>
+                    <span>Mobile Number</span>
+                </div>
+
+                <div class="inputBox">
+                    <textarea name="message" required></textarea>
+                    <span>Type your Message...</span>
+                </div>
+                <input type="submit" value="WhatsApp Message" class="home-btn">
+
+                
+            </form>
+           
+         
+            <!-- HOME BUTTON -->
+            <a href="index.php" class="home-btn">Go To Home</a>
+           
+         
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
